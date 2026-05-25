@@ -7,17 +7,23 @@ body{
     
 }
 
-section{
-
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     margin:0px;
-
-    
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
 }
- .basic , .professional , .master
+ 
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+}
+
+.basic , .professional , .master
  {
      background-color: white;
      text-align: center;
